@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0F8FF;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.navegador {
+  width: 90%;
+  margin: 25px auto;
+}
+.logo-inicio img{
+    width: 220px;
+    height: auto;
+}
+
+.barra-url {
+  background: #dce7ef;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  background: #004be0;
+  color: black;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  border: 2px solid #002c88;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.inicio {
+  width: 88%;
+  margin: 30px auto;
+  background: #d8eee9;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: center;
+}
+
+.inicio img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+}
+
+.descripcion {
+  background: white;
+  border: 2px solid #2364a8;
+  padding: 15px;
+  text-align: center;
+}
+
+.descripcion h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.descripcion p {
+  text-align: justify;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+button {
+  background: #0099ff;
+  padding: 10px 30px;
+  border: 2px solid #004b9b;
+  border-radius: 4px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.titulo {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 42px;
+  margin: 20px;
+}
+
+.productos {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.productos article {
+  text-align: center;
+  padding: 15px;
+}
+
+.productos h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.precio {
+  color: #6b1f1f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.productos img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+  margin: 15px 0;
+}
+
+.productos p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer {
+  width: 90%;
+  margin: 40px auto 20px;
+  background: #dce7ef;
+  border: 2px solid #777;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+footer p {
+  font-weight: bold;
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.redes img{
+    width:40px;
+    height:40px;
+    cursor:pointer;
+}
+
+.redes img:hover{
+    transform:scale(1.1);
+
+}
+.redes img{
+    width:30px;
+    height:30px;
+}
+
+/* Pantalla mediana: 2 columnas */
+@media screen and (max-width: 900px) {
+  .inicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Pantalla pequeña: 1 columna */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  .inicio {
+    grid-template-columns: 1fr;
+  }
+
+  .productos {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.barra{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:95%;
+    margin:auto;
+    padding:15px;
+}
+
+.logo img{
+    width:85px;
+    height:auto;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    background:#0048ff;
+    color:black;
+    padding:10px 25px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    font-style:italic;
+}
